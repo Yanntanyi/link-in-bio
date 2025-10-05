@@ -4,12 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Bungee&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
   <title>Yann's Link in Bio Website</title>
 
   <style>
+  /*
     * {
       border: 1px magenta dashed
     }
+  */
 
     html {
       min-height: 100%;
@@ -20,11 +32,13 @@
       padding-top: 40px;
       padding-bottom: 40px;
       background: linear-gradient(90deg, #1a415b, #304f74, #4c5b8c, #6d67a1, #9071b2, #b57abe, #db83c5, #ff8dc6);
-      color: rgba(242, 162, 249, 0.8);
+      color: rgba(255, 255, 255, 1);
+      font-family: "Georgia";
     }
 
     a {
-      color: rgba(242, 162, 249, 0.8);
+      color: rgba(255, 255, 255, 1);
+      text-decoration: none;
     }
 
     .Item {
@@ -32,6 +46,10 @@
       margin-bottom: 20px;
       display: flex;
       align-items: center;
+      border-radius: 1000px;
+      padding: 5px;
+      padding-right: 53px;
+      box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
     }
 
     .Avatar-Image {
@@ -61,6 +79,9 @@
     .Name-Row {
       margin-bottom: 30px;
       text-align: center;
+      font-family: "Libertinus Keyboard";
+      font-size: 24px;
+      font-weight: 900;
     }
 
     .Social-Icons-Row {
@@ -68,6 +89,13 @@
       display: flex;
       justify-content: space-around;
     }
+
+    .Link-Text {
+      text-align: center;
+      flex-grow: 1;
+    }
+
+
 
   </style>
 </head>
@@ -83,16 +111,19 @@
     </div>
 
     <div class="Social-Icons-Row">
-      <a href="https://github.com/Yanntanyi" target="_blank">
-        Github
+      <a class="Link-Text" href="https://github.com/Yanntanyi" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        
       </a>
 
-      <a href="https://www.linkedin.com/in/yannick-tanyi/" target="_blank">
-        Linkedin
+      <a class="Link-Text" href="https://www.linkedin.com/in/yannick-tanyi/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+        
       </a>
 
-      <a href="https://www.instagram.com/yanntanyi" target="_blank">
-        Instagram
+      <a class="Link-Text" href="https://www.instagram.com/yanntanyi" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+        
       </a>
     </div>
 
@@ -100,7 +131,7 @@
       <div class="Item">
         <img class="Thumbnail" src="/images/infernape.png">
 
-        <a href="https://pokemondb.net/pokedex/infernape" target="_blank">
+        <a class="Link-Text" href="https://pokemondb.net/pokedex/infernape" target="_blank">
           My Favorite Pokemon
         </a>
       </div>
@@ -108,7 +139,7 @@
       <div class="Item">
         <img class="Thumbnail" src="/images/Lelouch_vi_Britannia.webp" target="_blank">
 
-        <a href="https://www.crunchyroll.com/series/GY2P9ED0Y/code-geass" target="_blank">
+        <a class="Link-Text" href="https://www.crunchyroll.com/series/GY2P9ED0Y/code-geass" target="_blank">
           My Favorite Anime
         </a>
         </div>
@@ -116,7 +147,7 @@
       <div class="Item">
         <img class="Thumbnail" src="/images/Michael_Jackson_1983.jpg" target="_blank">
 
-        <a href="https://music.apple.com/us/album/workin-day-and-night/186166282?i=186166410" target="_blank">
+        <a class="Link-Text" href="https://music.apple.com/us/album/workin-day-and-night/186166282?i=186166410" target="_blank">
             My Favorite Song (Right Now)
         </a>
       </div>
